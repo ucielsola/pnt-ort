@@ -1,0 +1,84 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+label {
+    font-size: 1.25rem;
+}
+
+input {
+    padding: 1rem;
+    border-radius: var(--border-rad);
+    border: none;
+    background-color: var(--text-color);
+    color: var(--body-bg);
+}
+
+input.corto {
+    width: 5rem;
+}
+
+input.largo {
+    width: 100%;
+}
+
+.input-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 25rem;
+}
+
+.input-en-linea {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+input.error {
+    outline: 2px solid #ff0000;
+}
+
+button.oculto {
+    display: none;
+}
+
+/* Por defecto, el elemento esta oculto en el DOM */
+#mensaje-validacion {
+    display: none;
+}
+
+#mensaje-validacion.error,
+#mensaje-validacion.valido {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#mensaje-validacion.error {
+    background-color: #ff0000;
+    border: 1px solid #fff;
+}
+
+#mensaje-validacion.valido {
+    background-color: #3c9a8a;
+    border: 1px solid #fff;
+}

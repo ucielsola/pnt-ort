@@ -1,0 +1,134 @@
+:root {
+    /* Colores */
+    --body-bg: #3f3945;
+    --text-color: #f6f6f4;
+    --primario: #cd8f60;
+    --secundario: #9a614a;
+    --terciario: #b83b17;
+
+    /* Medidas */
+    --border-rad: 0.5rem;
+
+    /* Efectos */
+    --transition-dur: 150ms;
+}
+
+/* Reset de margenes a todos los elementos */
+* {
+    margin: 0;
+}
+
+html {
+    width: 100dvw;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding-inline: 2rem;
+
+    border-bottom: 1px solid var(--primario);
+}
+
+header p {
+    font-style: italic;
+    color: var(--primario);
+}
+
+footer {
+    border-top: 1px solid var(--primario);
+}
+
+main {
+    flex-grow: 1;
+
+    padding-block: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+h1 {
+    margin: 0.75rem;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin: 0.25rem;
+    font-size: 1.75rem;
+}
+
+img {
+    width: 100%;
+    border-radius: var(--border-rad);
+    transition: transform var(--transition-dur);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primario);
+    transition: all var(--transition-dur);
+    border: none;
+    padding: 1rem;
+    border-radius: var(--border-rad);
+    font-size: 1.25rem;
+    color: var(--text-color);
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+button:active {
+    opacity: 60%;
+    transform: scale(95%);
+}
+
+/* Efectos */
+.escalar:hover {
+    transform: scale(102%);
+}
+
+.sombra {
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.highlight {
+    color: var(--primario);
+}

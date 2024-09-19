@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>S1 Cantina</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles-social.css" />
+        <link rel="stylesheet" href="styles-menu.css" />
+        <link rel="stylesheet" href="styles-form.css" />
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>S1 Cantina</h1>
+            <p>
+                ¡Bienvenidos a S1 Cantina, donde cada plato es una experiencia y
+                cada sabor una aventura!
+            </p>
+        </header>
+
+        <main>
+            <section class="menu-section">
+                <h2>Nuestro Menú</h2>
+
+                <div class="menu">
+                    <div class="plato">
+                        <h3 class="plato-titulo">Carne</h3>
+                        <div class="plato-foto">
+                            <img
+                                src="images/carne.webp"
+                                class="sombra escalar"
+                            />
+                        </div>
+                        <p class="plato-descripcion">
+                            <span class="highlight">Bife a la parrilla</span>:
+                            Jugoso corte de carne a la parrilla, acompañado de
+                            espárragos asados y una selección de hierbas
+                            frescas.
+                        </p>
+                        <div class="plato-precio">$334</div>
+                    </div>
+                    <div class="plato">
+                        <h3 class="plato-titulo">Sopa</h3>
+
+                        <div class="plato-foto">
+                            <img
+                                src="images/sopa.webp"
+                                class="sombra escalar"
+                            />
+                        </div>
+                        <p class="plato-descripcion">
+                            <span class="highlight">Sopa de verduras</span>:
+                            Sopa reconfortante de verduras frescas, perfecta
+                            para calentar el alma en los días fríos.
+                        </p>
+                        <div class="plato-precio">$123</div>
+                    </div>
+                    <div class="plato">
+                        <h3 class="plato-titulo">Pescado</h3>
+                        <div class="plato-foto">
+                            <img
+                                src="images/pescado.webp"
+                                class="sombra escalar"
+                            />
+                        </div>
+                        <p class="plato-descripcion">
+                            <span class="highlight">Salmón al grill</span>:
+                            Filete de salmón a la parrilla con espárragos y un
+                            toque floral de comestibles, servido con salsa de
+                            reducción de vino.
+                        </p>
+                        <div class="plato-precio">$164</div>
+                    </div>
+                    <div class="plato">
+                        <h3 class="plato-titulo">Curry</h3>
+                        <div class="plato-foto">
+                            <img
+                                src="images/curry.webp"
+                                class="sombra escalar"
+                            />
+                        </div>
+                        <p class="plato-descripcion">
+                            <span class="highlight">Curry de vegetales</span>:
+                            Delicioso curry vegetariano con especias exóticas y
+                            cremoso toque de coco, servido con pan naan.
+                        </p>
+                        <div class="plato-precio">$100</div>
+                    </div>
+                    <div class="plato">
+                        <h3 class="plato-titulo">Pasta</h3>
+
+                        <div class="plato-foto">
+                            <img
+                                src="images/pasta.webp"
+                                class="sombra escalar"
+                            />
+                        </div>
+                        <p class="plato-descripcion">
+                            <span class="highlight"
+                                >Spaghetti a la bolognesa</span
+                            >: Clásico italiano, spaghetti en una salsa
+                            bolognesa casera con tomates frescos y albahaca.
+                        </p>
+                        <div class="plato-precio">$121</div>
+                    </div>
+                    <div class="plato">
+                        <h3 class="plato-titulo">Postre</h3>
+
+                        <div class="plato-foto">
+                            <img
+                                src="images/postre.webp"
+                                class="sombra escalar"
+                            />
+                        </div>
+                        <p class="plato-descripcion">
+                            <span class="highlight">Volcán de chocolate</span>:
+                            Postre de volcán de chocolate relleno de centro
+                            líquido, acompañado de helado de vainilla y frutas
+                            rojas.
+                        </p>
+                        <div class="plato-precio">$201</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Suscribite a nuestro newsletter!!</h2>
+                <p>
+                    Dejanos tus datos y te vamos a estar compartiendo por correo
+                    las mejores ofertas.
+                </p>
+
+                <form id="formulario">
+                    <div class="input-simple">
+                        <!-- Nombre -->
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" />
+                    </div>
+
+                    <div class="input-simple">
+                        <!-- Correo -->
+                        <label for="correo">Correo:</label>
+                        <input type="text" id="correo" name="correo" />
+                    </div>
+
+                    <div class="input-simple">
+                        <!-- Teléfono -->
+                        <label for="telefono">Teléfono:</label>
+                        <div class="input-en-linea">
+                            <input
+                                type="number"
+                                id="prefijo"
+                                name="prefijo"
+                                placeholder="Prefijo"
+                                class="corto"
+                            />
+                            <input
+                                type="number"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="Número"
+                                class="largo"
+                            />
+                        </div>
+                    </div>
+                    <!-- Restricciones -->
+                    <div class="input-simple">
+                        <label>Restricciones:</label>
+                        <div class="input-en-linea">
+                            <input
+                                type="checkbox"
+                                id="vegetariano"
+                                name="restricciones"
+                                value="vegetariano"
+                            />
+                            <label for="vegetariano">Vegetariano</label>
+
+                            <input
+                                type="checkbox"
+                                id="vegano"
+                                name="restricciones"
+                                value="vegano"
+                            />
+                            <label for="vegano">Vegano</label>
+
+                            <input
+                                type="checkbox"
+                                id="celiaco"
+                                name="restricciones"
+                                value="celiaco"
+                            />
+                            <label for="celiaco">Celíaco</label>
+                        </div>
+                    </div>
+
+                    <div class="input-en-linea">
+                        <!-- Acepto términos -->
+                        <input type="checkbox" id="terminos" name="terminos" />
+                        <label for="terminos">
+                            Acepto términos y condiciones
+                        </label>
+                    </div>
+
+                    <!-- Botón Enviar -->
+                    <button id="submit" type="submit">Enviar</button>
+
+                    <p id="mensaje-validacion"></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    title="Facebook"
+                >
+                    <img
+                        src="images/facebook.png"
+                        class="escalar"
+                        alt="Facebook"
+                    />
+                </a>
+                <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    title="Instagram"
+                >
+                    <img
+                        src="images/instagram.png"
+                        class="escalar"
+                        alt="Instagram"
+                    />
+                </a>
+                <a href="https://www.x.com" target="_blank" title="x">
+                    <img src="images/x.png" class="escalar" alt="x" />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.icon {
+    width: 2rem;
+    height: 2rem;
+    color: var(--text-color);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.social a img {
+    width: 2rem;
+    height: 2rem;
+}

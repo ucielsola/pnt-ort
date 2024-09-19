@@ -1,0 +1,38 @@
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 0.5rem;
+    max-width: 45rem;
+    align-items: start;
+    align-content: center;
+    width: 100%;
+}
+
+.plato {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    height: 100%;
+}
+
+.plato-titulo {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.plato-foto {
+    max-width: 15rem;
+}
+
+.plato-descripcion {
+    font-size: 1.25rem;
+    height: 100%;
+}
+
+.plato-precio {
+    padding-block: 0.5rem;
+    font-weight: 700;
+    text-align: right;
+}
